@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BestWebCode | Free Web Code</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+
+</head>
+<style>
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 33%;
+    }
+    
+    .tablink:hover {
+        background-color: #777;
+    }
+    /* Style the tab content (and add height:100% for full page content) */
+    
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+    
+    #News {
+        background-color: rgba(253, 136, 69, 0.678);
+    }
+    
+    #Contact {
+        background-color: rgba(5, 5, 175, 0.685);
+    }
+    
+    #About {
+        background-color: rgba(247, 233, 36, 0.671);
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">BestWeb<span>Code</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="navbar1st.html">Navbar</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="go-premium-cta"><a href="#">New</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- header ends -->
+    <!-- two sided blog part starts -->
+    <div class="container-fluid ">
+        <div class="row ">
+            <!-- to get the space form left and right -->
+            <div class="col-xl-10  col-lg-10 col-md-12 col-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <!-- left side of the blog  -->
+                    <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                        <div class="row gy-5 ">
+                            <div class="col-12 card p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                    <h1 class="text-uppercase">Responsive Navigation Bar using HTML CSS </h1>
+                                    <p class="blog_title"> <span class="font-weight-bold"> BestWebCode, </span> Feb 11, 2021 </p>
+                                </div>
+                                <figure class="right_side_img mb-5" style="display: flex;">
+                                    <a href="" target="_blank"><img src="footer/footer.jpeg" class="img-fluid shadow"></a>
+                                    <!-- <img src="navbarimage/navbar-responsive.png" class="img-fluid shadow">
+                                    <img src="navbarimage/responsiveimage.png" class="img-fluid shadow"> -->
+                                </figure>
+                            </div>
+                            <div class="tab">
+                                <button class="tablink" onclick="openPage('News', this, 'rgba(253, 136, 69, 0.678)')" id="defaultOpen">HTML</button>
+                                <button class="tablink" onclick="openPage('Contact', this, 'rgba(5, 5, 175, 0.685)')">CSS</button>
+                                <button class="tablink" onclick="openPage('About', this, 'rgba(247, 233, 36, 0.671)')">JAVASCRIPT</button>
+
+                            </div>
+                        </div>
+
+                        <div class="row gy-5">
+                            <div class="col-12 card p-4 shadow blog_left__div tabcontent" id="News">
+                                <textarea cols="100" id="htmlText" readonly="" rows="20" style="height: auto; resize: none; width: 100%;">
+                                    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Footer Design BestWebCode&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;footer class="footer"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="footer-col"&gt;
+                    &lt;h4&gt;BestWebCode&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link4&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="footer-col"&gt;
+                    &lt;h4&gt;BestWebCode&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link4&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="footer-col"&gt;
+                    &lt;h4&gt;BestWebCode&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Link4&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="footer-col"&gt;
+                    &lt;h4&gt;follow us&lt;/h4&gt;
+                    &lt;div class="social-links"&gt;
+                        &lt;a href="#"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a href="#"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a href="#"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a href="#"&gt;&lt;i class="fab fa-linkedin-in"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+                                </textarea>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col-12 card p-4 shadow blog_left__div tabcontent" id="Contact">
+                                <textarea cols="100" id="htmlText" readonly="" rows="20" style="height: auto; resize: none; width: 100%;">
+                                   
+                                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+                                    body {
+                                        line-height: 1.5;
+                                        font-family: 'Poppins', sans-serif;
+                                    }
+                                    
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    .container {
+                                        max-width: 1170px;
+                                        margin: auto;
+                                    }
+                                    
+                                    .row {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                    }
+                                    
+                                    .footer {
+                                        background-color: #002172;
+                                        padding: 70px 0;
+                                    }
+                                    
+                                    .footer-col {
+                                        width: 25%;
+                                        padding: 0 15px;
+                                    }
+                                    
+                                    .footer-col h4 {
+                                        font-size: 18px;
+                                        color: #ffffff;
+                                        text-transform: capitalize;
+                                        margin-bottom: 35px;
+                                        font-weight: 500;
+                                        position: relative;
+                                    }
+                                    
+                                    .footer-col h4::before {
+                                        content: '';
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: -10px;
+                                        background-color: #e91e63;
+                                        height: 2px;
+                                        box-sizing: border-box;
+                                        width: 50px;
+                                    }
+                                    
+                                    .footer-col ul li:not(:last-child) {
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .footer-col ul li a {
+                                        font-size: 16px;
+                                        text-transform: capitalize;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        font-weight: 300;
+                                        color: #bbbbbb;
+                                        display: block;
+                                        transition: all 0.3s ease;
+                                    }
+                                    
+                                    .footer-col ul li a:hover {
+                                        color: #ffffff;
+                                        padding-left: 8px;
+                                    }
+                                    
+                                    .footer-col .social-links a {
+                                        display: inline-block;
+                                        height: 40px;
+                                        width: 40px;
+                                        background-color: rgba(255, 255, 255, 0.2);
+                                        margin: 0 10px 10px 0;
+                                        text-align: center;
+                                        line-height: 40px;
+                                        border-radius: 50%;
+                                        color: #ffffff;
+                                        transition: all 0.5s ease;
+                                    }
+                                    
+                                    .footer-col .social-links a:hover {
+                                        color: #010c27;
+                                        background-color: #ffffff;
+                                    }
+                                    
+                                    
+                                    /*responsive*/
+                                    
+                                    @media(max-width: 767px) {
+                                        .footer-col {
+                                            width: 50%;
+                                            margin-bottom: 30px;
+                                        }
+                                    }
+                                    
+                                    @media(max-width: 574px) {
+                                        .footer-col {
+                                            width: 100%;
+                                        }
+                                    }
+                                        </textarea>
+                            </div>
+                            <div class="col-12 card p-4 shadow blog_left__div tabcontent" id="About">
+                                <textarea cols="100" id="htmlText" readonly="" rows="20" style="height: auto; resize: none; width: 100%;">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right ; part -->
+                    <div class="col-lg-3 col-md-7 col-11  justify-content-end m-lg-0 m-auto ">
+                        <div class="row gy-5 left_div__blog">
+
+                            <!-- tags -->
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>CODE</h2>
+                                </div>
+                                <div class="tags_main right_sub__div">
+                                    <a href="https://youtu.be/5p8e2ZkbOFU" target="_thapa" class="badge shadow text-capitalize"> html </a>
+                                    <a href="#" class="badge shadow text-capitalize"> css </a>
+                                    <a href="#" class="badge shadow text-capitalize"> js </a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Follow Me</h2>
+                                </div>
+                                <div class="right_sub__div d-flex justify-content-around">
+                                    <a href="https://www.facebook.com/Bestwebcode-537405963870091" target="_blank"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                                    <a href="https://twitter.com/bestwebcode" target="_blank"> <i class="fab fa-3x fa-twitter-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/bestweb-code-64245b206/" target="_blank"> <i class="fab fa-3x fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/bestwebcode/" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
+                                    <a href="#" target="_blank"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+
+                                </div>
+                            </div><br>
+                            <!-- Design -->
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Design</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <div class="row gx-3">
+                                        <div class="col-6">
+                                            <a href="design.html">
+                                                <figure>
+                                                    <img src="images/cocacola.png" class="img-fluid shadow">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="design.html">
+                                                <figure>
+                                                    <img src="images/traveling.jpg" class="img-fluid shadow">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="design.html">
+                                                <figure>
+                                                    <img src="images/cocacola.jpg" class="img-fluid shadow">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- <div class="col-6">
+                                        <figure>
+                                            <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                        </figure>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" right_div_post">
+                                <!-- <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Inspiration</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <div class="row gx-3">
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/38547/office-freelancer-computer-business-38547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- Follow Me -->
+                            <div class=" right_div_post">
+                                <!-- <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Follow Me</h2>
+                                </div>
+                                <div class="right_sub__div d-flex justify-content-around">
+                                    <a href="#"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                                    <a href="https://www.instagram.com/vinodthapa55/" target="_thapa"> <i class="fab fa-3x fa-instagram"></i></a>
+                                    <a href="#"> <i class="fab fa-3x fa-github-square"></i> </a>
+                                    <a href="#"> <i class="fab fa-3x fa-twitter-square"></i></a>
+                                    <a href="#"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                                    <a href="#"> <i class="fab fa-3x fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                            <!-- Subscribe -->
+                            <div class=" right_div_post">
+                                <!-- <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Subscribe</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Enter your e-mail below and get notified on the latest blog posts.</label>
+                                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name@example.com">
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="subs_btn d-block" type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content ">
+                    <p>BestWebCode is a blog where you can show HTML, CSS, and JavaScript along with creative Design .</p>
+
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <div class="right_sub__div d-flex justify-content-around">
+                        <a href="https://www.facebook.com/Bestwebcode-537405963870091" target="_blank"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                        <a href="https://twitter.com/bestwebcode" target="_blank"> <i class="fab fa-3x fa-twitter-square"></i></a>
+
+                        <a href="https://www.linkedin.com/in/bestweb-code-64245b206/" target="_blank"> <i class="fab fa-3x fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bestwebcode/" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
+                        <a href="#" target="_blank"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="https://www.bestwebcode.com">BestWebCode</a> | </span>
+                <span class="far fa-copyright"></span><span> 2020 All rights reserved. | <a href="Privacypolicy.html" > Privacy Policy </a>     </span>
+            </center>
+        </div>
+    </footer>
+
+    <!-- Close Footer -->
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+
+</html>

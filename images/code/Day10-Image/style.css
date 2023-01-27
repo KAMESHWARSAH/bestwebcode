@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    width: 800px;
+    height: 500px;
+    background-color: antiquewhite;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#background img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+}
+
+#background #one {
+    top: 65%;
+    left: 40%;
+}
+
+#background #two {
+    top: 55%;
+    z-index: 1;
+}
+
+#background #three {
+    left: 40%;
+}
+
+#background img:hover {
+    transform: translate(-50%, -50%) scale(.1);
+    z-index: 100;
+    cursor: pointer;
+}

@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BestWebCode | Free Web Code</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+
+</head>
+<style>
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 33%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+
+    #News {
+        background-color: rgba(253, 136, 69, 0.678);
+    }
+
+    #Contact {
+        background-color: rgba(5, 5, 175, 0.685);
+    }
+
+    #About {
+        background-color: rgba(247, 233, 36, 0.671);
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">BestWeb<span>Code</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="navbar1st.html">Navbar</a></li>
+                    <li><a href="game.html">Play Game</a></li>
+                    <li><a href="design.html">Design</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="go-premium-cta"><a href="programming.html">Program</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- header ends -->
+    <!-- two sided blog part starts -->
+    <div class="container-fluid ">
+        <div class="row ">
+            <!-- to get the space form left and right -->
+            <div class="col-xl-10  col-lg-10 col-md-12 col-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <!-- left side of the blog  -->
+                    <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                        <div class="row gy-5 ">
+                            <div class="col-12 card p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                    <h1 class="text-uppercase">Responsive Navigation Bar using HTML CSS </h1>
+                                    <p class="blog_title"> <span class="font-weight-bold"> BestWebCode, </span> Feb 6,
+                                        2021 </p>
+                                </div>
+                                <figure class="right_side_img mb-5" style="display: flex;">
+                                    <a href="" target="_blank"><img src="navbarimage/navbar2.jpeg"
+                                            class="img-fluid shadow"></a>
+                                    <!-- <img src="navbarimage/navbar-responsive.png" class="img-fluid shadow">
+                                    <img src="navbarimage/responsiveimage.png" class="img-fluid shadow"> -->
+                                </figure>
+                            </div>
+                            <div class="tab">
+                                <button class="tablink" onclick="openPage('News', this, 'rgba(253, 136, 69, 0.678)')"
+                                    id="defaultOpen">HTML</button>
+                                <button class="tablink"
+                                    onclick="openPage('Contact', this, 'rgba(5, 5, 175, 0.685)')">CSS</button>
+                                <button class="tablink"
+                                    onclick="openPage('About', this, 'rgba(247, 233, 36, 0.671)')">JAVASCRIPT</button>
+
+                            </div>
+                        </div>
+
+                        <div class="row gy-5">
+                            <div class="col-12 card p-4 shadow blog_left__div tabcontent" id="News">
+                                <textarea cols="100" id="htmlText" readonly="" rows="20"
+                                    style="height: auto; resize: none; width: 100%; background: rgba(186, 250, 206, 0.823); font-weight: 600; font-family: 'Courier New', Courier, monospace;">
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="en" dir="ltr"&gt;
+                                    
+                                    &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;link rel="stylesheet" href="style.css"&gt;
+                                    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+                                    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                                    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;/head&gt;
+                                    
+                                    &lt;body&gt;
+                                    &lt;div class="sidebar"&gt;
+                                    &lt;div class="logo-details"&gt;
+                                    &lt;i class="fa fa-audio-description" aria-hidden="true"&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;ul class="nav-links"&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#" class="active"&gt;
+                                    &lt;i class="fa fa-home" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-comment-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-sticky-note-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-tint" aria-hidden="true"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-envelope-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-sticky-note-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-envelope-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-comment-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    
+                                    &lt;li&gt;
+                                    &lt;a href="#"&gt;
+                                    &lt;i class="fa fa-sticky-note-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    
+                                    &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;section class="home-section"&gt;
+                                    &lt;nav&gt;
+                                    
+                                    &lt;div class="search-box"&gt;
+                                    &lt;input type="text" placeholder="Search..."&gt;
+                                    &lt;i class="fa fa-search" aria-hidden="true"&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="profile-details"&gt;
+                                    &lt;i class="fa fa-th-large" aria-hidden="true"&gt;&lt;/i&gt;
+                                    &lt;i class="fa fa-user-o" aria-hidden="true"&gt;&lt;/i&gt;
+                                    &lt;i class="fa fa-caret-down" aria-hidden="true"&gt;&lt;/i&gt;
+                                    
+                                    &lt;/div&gt;
+                                    &lt;/nav&gt;
+                                    
+                                    &lt;div class="home-content"&gt;
+                                    &lt;div class="left-boxes"&gt;
+                                    &lt;div class="leftbox box"&gt;
+                                    &lt;div class="title"&gt;ADD COURSE&lt;/div&gt;&lt;br&gt;
+                                    &lt;div class="row"&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="form-group"&gt;
+                                    &lt;label&gt;TITLE&lt;/label&gt;
+                                    &lt;input type="text" class="form-control" placeholder="TITLE"&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="form-group"&gt;
+                                    &lt;label for="exampleFormControlTextarea1"&gt;SHORT&lt;/label&gt;
+                                    &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="short"&gt;&lt;/textarea&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;label for="exampleFormControlTextarea1"&gt;IMAGE&lt;/label&gt;
+                                    
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;input type="file" class="custom-file-input" id="customFile"&gt;
+                                    &lt;label class="custom-file-label" for="customFile"&gt;Choose file&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    
+                                    &lt;!-- 2nd --&gt;&lt;br&gt;
+                                    &lt;div class="row"&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;label for="exampleFormControlTextarea1"&gt;LOGO&lt;/label&gt;
+                                    
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;input type="file" class="custom-file-input" id="customFile"&gt;
+                                    &lt;label class="custom-file-label" for="customFile"&gt;Choose file&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="form-group"&gt;
+                                    &lt;label for="title"&gt;PAGE NAME&lt;/label&gt;
+                                    &lt;input type="text" class="form-control" placeholder="TITLE"&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;label for="inputState"&gt;STATUS&lt;/label&gt;
+                                    &lt;select id="inputState" class="form-control"&gt;
+                                    &lt;option selected&gt;Active&lt;/option&gt;
+                                    &lt;option&gt;...&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    
+                                    &lt;!-- 3 --&gt;
+                                    &lt;!-- 2nd --&gt;&lt;br&gt;
+                                    &lt;div class="row"&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;label for="inputState"&gt;home page&lt;/label&gt;
+                                    &lt;select id="inputState" class="form-control"&gt;
+                                    &lt;option selected&gt;Active&lt;/option&gt;
+                                    &lt;option&gt;...&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="form-group"&gt;
+                                    &lt;label for="title"&gt;PAGE NAME&lt;/label&gt;
+                                    &lt;input type="text" class="form-control" placeholder="TITLE"&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col"&gt;
+                                    &lt;div class="custom-file"&gt;
+                                    &lt;label for="inputState"&gt;STATUS&lt;/label&gt;
+                                    &lt;select id="inputState" class="form-control"&gt;
+                                    &lt;option selected&gt;Active&lt;/option&gt;
+                                    &lt;option&gt;...&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;/section&gt;
+                                    &lt;!-- code --&gt;
+                                    
+                                    
+                                    &lt;/body&gt;
+                                    
+                                    &lt;/html&gt;                                       </textarea>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col-12 card p-4 shadow blog_left__div tabcontent" id="Contact">
+                                <textarea cols="100" id="htmlText" readonly="" rows="20"
+                                    style="height: auto; resize: none; width: 100%; background: rgba(186, 250, 206, 0.823); font-weight: 600; font-family: 'Courier New', Courier, monospace;">
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 70px;
+  background: #03848099;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.sidebar .logo-details i{
+  font-size: 28px;
+  font-weight: 20;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+
+.sidebar .nav-links{
+  margin-top: 10px;
+}
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  height: 50px;
+}
+.sidebar .nav-links li a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li i{
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* section 2 */
+.home-section{
+  position: relative;
+  background: #d3d3d344;
+  min-height: 100vh;
+  width: calc(100% - 70px);
+  left: 70px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section{
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.home-section nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #d3d3d344;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 70px);
+  left: 70px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section nav{
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.home-section nav .sidebar-button{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-section nav .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 550px;
+  width: 50%;
+  margin: 0 20px;
+ 
+}
+nav .search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #ffffff;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border-radius: 100px;
+}
+nav .search-box .fa-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(164, 164, 164);
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+
+.home-section nav .profile-details{
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+.home-section nav .profile-details i{
+    padding: 0 10px;
+}
+
+nav .profile-details i{
+  font-size: 25px;
+  color: #333;
+}
+.home-section .home-content{
+  position: relative;
+  padding-top: 104px;
+}
+
+
+/* left box */
+.home-content .left-boxes .leftbox{
+  width: 97%;
+  background: rgb(255, 255, 255);
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-boxes .box .title{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+  .sidebar{
+    width: 60px;
+  }
+  .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section{
+    width: calc(100% - 220px);
+    overflow: hidden;
+    left: 220px;
+  }
+  .home-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section nav{
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+}
+@media (max-width: 1150px) {
+  .home-content .left-boxes{
+    flex-direction: column;
+  }
+
+  .home-content .left-boxes .top-sales{
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .overview-boxes .box{
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 700px) {
+  nav .sidebar-button .dashboard,
+  nav .profile-details .admin_name,
+  nav .profile-details i{
+    display: none;
+  }
+  .home-section nav .profile-details{
+    height: 50px;
+    min-width: 40px;
+  }
+
+}
+@media (max-width: 550px) {
+  .overview-boxes .box{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sidebar.active ~ .home-section nav .profile-details{
+    display: none;
+  }
+}
+
+                                        </textarea>
+                            </div>
+                            <div class="col-12 card p-4 shadow blog_left__div tabcontent" id="About">
+                                <textarea cols="100" id="htmlText" readonly="" rows="20"
+                                    style="height: auto; resize: none; width: 100%;">
+
+
+                                        </textarea>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right ; part -->
+                    <div class="col-lg-3 col-md-7 col-11  justify-content-end m-lg-0 m-auto ">
+                        <div class="row gy-5 left_div__blog">
+
+                            <!-- popular post -->
+                            <!-- <div class=" popular_post ">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Popular Posts</h2>
+                                </div>
+                                <div class="right_sub__div shadow">
+                                    <div class="row ">
+                                        <div class="col-3  popular_post__img1 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Bill Gates</h3>
+                                            <p class="text-capitalize">CEO Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-3  popular_post__img2 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Mark Zuckerberg </h3>
+                                            <p class="text-capitalize">Programmer</p>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-3  popular_post__img3 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Jeff Bezos</h3>
+                                            <p class="text-capitalize">Amazon</p>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-3  popular_post__img4 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Steve Jobs</h3>
+                                            <p class="text-capitalize">Apple</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- advertise -->
+                            <!-- <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Advertise</h2>
+                                </div>
+                                <div class="right_sub__div ">
+                                    <div class="adevetise_img bg-light shadow">
+                                        <p>Ads goes here</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- tags -->
+                            <!-- <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Tags</h2>
+                                </div>
+                                <div class="tags_main right_sub__div">
+                                    <a href="https://youtu.be/5p8e2ZkbOFU" target="_thapa" class="badge shadow text-capitalize"> html </a>
+                                    <a href="#" class="badge shadow text-capitalize"> css </a>
+                                    <a href="#" class="badge shadow text-capitalize"> js </a>
+                                    <a href="#" class="badge shadow text-capitalize"> react </a>
+                                    <a href="#" class="badge shadow text-capitalize"> vue </a>
+                                    <a href="#" class="badge shadow text-capitalize"> php </a>
+                                    <a href="#" class="badge shadow text-capitalize"> python </a>
+                                    <a href="#" class="badge shadow text-capitalize"> kotlin </a>
+                                    <a href="#" class="badge shadow text-capitalize"> c++ </a>
+                                    <a href="#" class="badge shadow text-capitalize"> java </a>
+                                </div>
+                            </div> -->
+                            <!-- Inspiration -->
+                            <div class=" right_div_post">
+                                <!-- <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Inspiration</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <div class="row gx-3">
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/38547/office-freelancer-computer-business-38547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- Follow Me -->
+                            <div class=" right_div_post">
+                                <!-- <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Follow Me</h2>
+                                </div>
+                                <div class="right_sub__div d-flex justify-content-around">
+                                    <a href="#"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                                    <a href="https://www.instagram.com/vinodthapa55/" target="_thapa"> <i class="fab fa-3x fa-instagram"></i></a>
+                                    <a href="#"> <i class="fab fa-3x fa-github-square"></i> </a>
+                                    <a href="#"> <i class="fab fa-3x fa-twitter-square"></i></a>
+                                    <a href="#"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                                    <a href="#"> <i class="fab fa-3x fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                            <!-- Subscribe -->
+                            <div class=" right_div_post">
+                                <!-- <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Subscribe</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Enter your e-mail below and get notified on the latest blog posts.</label>
+                                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name@example.com">
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="subs_btn d-block" type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content ">
+                    <p>BestWebCode is a blog where you can show HTML, CSS, and JavaScript along with creative Design .
+                    </p>
+
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <div class="right_sub__div d-flex justify-content-around">
+                        <a href="https://www.facebook.com/Bestwebcode-537405963870091" target="_blank"> <i
+                                class="fab fa-facebook-square fa-3x"></i></a>
+                        <a href="https://twitter.com/bestwebcode" target="_blank"> <i
+                                class="fab fa-3x fa-twitter-square"></i></a>
+
+                        <a href="https://www.linkedin.com/in/bestweb-code-64245b206/" target="_blank"> <i
+                                class="fab fa-3x fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bestwebcode/" target="_blank"><i
+                                class="fab fa-3x fa-instagram"></i></a>
+                        <a href="#" target="_blank"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="https://www.bestwebcode.com">BestWebCode</a> | </span>
+                <span class="far fa-copyright"></span><span> 2020 All rights reserved. | <a href=""> Privacy Policy </a>
+                </span>
+            </center>
+        </div>
+    </footer>
+
+    <!-- Close Footer -->
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+    </script>
+</body>
+
+</html>
